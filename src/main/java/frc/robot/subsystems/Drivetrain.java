@@ -244,6 +244,8 @@ public class Drivetrain extends SubsystemBase {
       SmartDashboard.putNumber("leftRef", leftRef);
       SmartDashboard.putNumber("rightRef", rightRef);
 
+      // SmartDashboard.putString("Foo", "Bar");
+
       // Run PID controllers to track this velocity.
       double leftTorque = m_leftPID.calculate(m_leftVelocity, leftRef);
       double rightTorque = m_rightPID.calculate(m_rightVelocity, rightRef);
